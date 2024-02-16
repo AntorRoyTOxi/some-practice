@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some small projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+      <header>
+         
+      </header> 
+       <main class="flex justify-around mt-7"> 
+        <section>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="ellipse.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-4xl">Ellipse</h2>
+                  <p class="text-2xl"> Area: 	&pi; r <sup>2</sup> </p> 
+                     <div>
+                        r= <input id="input-text" type="text" class="bg-slate-300 p-2 w-20 rounded-md outline-none">
+                     </div>
+                  <div class="card-actions">
+                    <button onclick="calculate()" class="btn btn-primary w-60">Calculate </button>
+                  </div>
+                </div>
+              </div>
+        </section> 
+             <section class="border-2 p-3 w-96">
+                  <h1 class="text-4xl text-center font-bold"> Calculate Area</h1>  
+                  <p class="text-3xl p-8">   Result: &nbsp; <span id="show-result"> </span>  &nbsp;  m <sup>2</sup></p>
+                   
+             </section>
+
+       </main> 
+        <footer>
+
+        </footer> 
+          <script src="soma.js"></script> 
+           <script src="callFunction.js"></script>
+</body>
+</html>
